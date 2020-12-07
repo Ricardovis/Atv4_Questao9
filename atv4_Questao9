@@ -1,0 +1,45 @@
+programa {
+	funcao inicio() {
+		
+		/*A colônia de pescadores precisa que você:
+        / a. Escreva um programa que leia a variável peso_de_peixes e calcule o excesso. 
+        / b. Grave em uma variável chamada excesso, a quantidade de quilos além do limite e
+        / na variável multa o valor da multa que o pescador deverá pagar.
+        / c. Escreva na tela os dados do programa com as mensagens adequadas (quantidade de
+         peixe pescado, multa a ser paga, etc).*/
+		
+		limpa()
+		inteiro peso_de_peixes
+		escreva("Olá quantos quilos de peixe você pescou? ")
+		leia(peso_de_peixes)
+		limpa()
+		
+		se(peso_de_peixes <= 50){
+	    
+		inteiro excesso = 0
+		inteiro multa = excesso*4.50
+		    
+		 escreva("Tabela do Peixe\n")
+		    escreva("===========================================\n")
+		    escreva("Peso total da carga de peixe pescado: ", peso_de_peixes, "kg \n")
+		    escreva("Excesso de peso: ", excesso, "kg \n")
+		    escreva("Valor da multa de excesso de peso: ", multa, " reais \n")
+		    escreva("===========================================")
+	
+		}senao se(peso_de_peixes >= 50){
+	    
+	    inteiro excesso = peso_de_peixes - 50
+	    inteiro multa = excesso*4.50
+	       
+		    escreva("Tabela do Peixe\n")
+		    escreva("===========================================\n")
+		    escreva("Peso total da carga de peixe pescado: ", peso_de_peixes, "kg \n")
+		    escreva("Excesso de peso: ", excesso, "kg \n")
+		    escreva("Valor da multa de excesso de peso: ", multa, " reais \n")
+		    escreva("===========================================")
+	    
+	}
+	
+	    
+	}
+}
